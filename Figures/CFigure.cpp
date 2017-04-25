@@ -15,6 +15,7 @@ bool CFigure::IsSelected() const
 void CFigure::ChngDrawClr(color Dclr)
 {	FigGfxInfo.DrawClr = Dclr; }
 
+
 void CFigure::ChngFillClr(color Fclr)
 {	
 	FigGfxInfo.isFilled = true;

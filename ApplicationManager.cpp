@@ -80,6 +80,17 @@ CFigure *ApplicationManager::GetFigure(int x, int y) const
 
 	return NULL;
 }
+
+void ApplicationManager::GetFigCount(int&size)
+{
+	size = FigCount;
+}
+
+CFigure**ApplicationManager::GetFigList()
+{
+	return FigList;
+}
+
 //==================================================================================//
 //							Interface Management Functions							//
 //==================================================================================//
