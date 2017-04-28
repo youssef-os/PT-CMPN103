@@ -14,7 +14,7 @@ public:
 
 	//Reads rectangle parameters
 	virtual void ReadActionParameters();
-	
+	virtual void ReadImpilictParameters(Point P1o, Point P2o, Point P3o, GfxInfo Gfx);
 	//Add rectangle to the ApplicationManager
 	virtual void Execute() ;
 	

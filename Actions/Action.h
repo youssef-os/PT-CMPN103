@@ -18,6 +18,7 @@ public:
 
 	//Reads parameters required for action to execute (code depends on action type)
 	virtual void ReadActionParameters() =0;
+	virtual void ReadImpilictParameters(Point P1o, Point P2o, Point P3o, GfxInfo Gfx);
 	
 	//Execute action (code depends on action type)
 	virtual void Execute() =0;
