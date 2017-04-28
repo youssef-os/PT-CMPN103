@@ -17,7 +17,7 @@
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
-    <PlatformToolset>v140</PlatformToolset>
+    <PlatformToolset>v110</PlatformToolset>
     <UseOfMfc>false</UseOfMfc>
     <CharacterSet>MultiByte</CharacterSet>
   </PropertyGroup>
@@ -128,9 +128,15 @@
     </Bscmake>
   </ItemDefinitionGroup>
   <ItemGroup>
+<<<<<<< HEAD
+    <ClCompile Include="AddCircleAction.cpp" />
+    <ClCompile Include="AddTrianAction.cpp" />
+    <ClCompile Include="CCircle.cpp" />
+=======
     <ClCompile Include="Actions\Copy.cpp" />
     <ClCompile Include="Actions\Cut.cpp" />
     <ClCompile Include="Actions\Delete.cpp" />
+>>>>>>> 698f8cfa1eca3d2d0cc4a2833710757071ff2a6b
     <ClCompile Include="CMUgraphicsLib\auxil.cpp" />
     <ClCompile Include="CMUgraphicsLib\CMUgraphics.cpp" />
     <ClCompile Include="CMUgraphicsLib\image.cpp" />
@@ -166,6 +172,11 @@
     <ClCompile Include="CMUgraphicsLib\jpeg\jquant1.c" />
     <ClCompile Include="CMUgraphicsLib\jpeg\jquant2.c" />
     <ClCompile Include="CMUgraphicsLib\jpeg\jutils.c" />
+<<<<<<< HEAD
+    <ClCompile Include="Copy.cpp" />
+    <ClCompile Include="CTriangle.cpp" />
+=======
+>>>>>>> 698f8cfa1eca3d2d0cc4a2833710757071ff2a6b
     <ClCompile Include="Figures\CFigure.cpp" />
     <ClCompile Include="Figures\CRectangle.cpp" />
     <ClCompile Include="Actions\AddRectAction.cpp" />
@@ -175,9 +186,15 @@
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
+<<<<<<< HEAD
+    <ClInclude Include="AddCircleAction.h" />
+    <ClInclude Include="AddTrianAction.h" />
+    <ClInclude Include="CCircle.h" />
+=======
     <ClInclude Include="Actions\Copy.h" />
     <ClInclude Include="Actions\Cut.h" />
     <ClInclude Include="Actions\Delete.h" />
+>>>>>>> 698f8cfa1eca3d2d0cc4a2833710757071ff2a6b
     <ClInclude Include="CMUgraphicsLib\auxil.h" />
     <ClInclude Include="CMUgraphicsLib\CMUgraphics.h" />
     <ClInclude Include="CMUgraphicsLib\colors.h" />
@@ -198,6 +215,11 @@
     <ClInclude Include="CMUgraphicsLib\jpeg\jpegint.h" />
     <ClInclude Include="CMUgraphicsLib\jpeg\jpeglib.h" />
     <ClInclude Include="CMUgraphicsLib\jpeg\jversion.h" />
+<<<<<<< HEAD
+    <ClInclude Include="Copy.h" />
+    <ClInclude Include="CTriangle.h" />
+=======
+>>>>>>> 698f8cfa1eca3d2d0cc4a2833710757071ff2a6b
     <ClInclude Include="Figures\CFigure.h" />
     <ClInclude Include="Figures\CRectangle.h" />
     <ClInclude Include="Actions\Action.h" />

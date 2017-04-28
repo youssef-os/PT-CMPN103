@@ -1,6 +1,16 @@
 #include "ApplicationManager.h"
 #include "Actions\AddRectAction.h"
+<<<<<<< HEAD
+#include "AddTrianAction.h"
+#include "AddCircleAction.h"
+
+
+
+
+
+=======
 #include "Actions\Copy.h"
+>>>>>>> 698f8cfa1eca3d2d0cc4a2833710757071ff2a6b
 
 
 //Constructor
@@ -77,6 +87,19 @@ void ApplicationManager::ExecuteAction(ActionType ActType)
 			case PASTE:
 				break;
 
+<<<<<<< HEAD
+		case DRAW_TRI:
+			pAct=new AddTrianAction(this);
+			break;
+		case DRAW_CIRC:
+			pAct=new AddCircleAction(this);
+
+
+
+		case DRAW_LINE:
+			///create AddLineAction here
+=======
+>>>>>>> 698f8cfa1eca3d2d0cc4a2833710757071ff2a6b
 
 				//////////////////////////////////////////////////////////////////////////////////
 
@@ -102,6 +125,17 @@ void ApplicationManager::ExecuteAction(ActionType ActType)
 			case EXIT:
 				break;
 
+<<<<<<< HEAD
+		case EXIT:
+			///create ExitAction here
+			
+			break;
+		
+		  
+		case STATUS:	//a click on the status bar ==> no action
+			return;
+=======
+>>>>>>> 698f8cfa1eca3d2d0cc4a2833710757071ff2a6b
 	}
 	
 	//Execute the created action
@@ -121,6 +155,7 @@ void ApplicationManager::AddFigure(CFigure* pFig)
 {
 	if(FigCount < MaxFigCount )
 		FigList[FigCount++] = pFig;	
+	   // pFig->setID(FigCount);
 }
 ////////////////////////////////////////////////////////////////////////////////////
 CFigure *ApplicationManager::GetFigure(int x, int y) const

@@ -154,6 +154,18 @@
     <ClCompile Include="Actions\Delete.cpp">
       <Filter>Action Classes</Filter>
     </ClCompile>
+    <ClCompile Include="AddCircleAction.cpp">
+      <Filter>Action Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="CCircle.cpp">
+      <Filter>Figures Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="AddTrianAction.cpp">
+      <Filter>Action Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="CTriangle.cpp">
+      <Filter>Figures Classes</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="CMUgraphicsLib\auxil.h">
@@ -249,6 +261,18 @@
     </ClInclude>
     <ClInclude Include="Actions\Delete.h">
       <Filter>Action Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="AddCircleAction.h">
+      <Filter>Action Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="CCircle.h">
+      <Filter>Figures Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="AddTrianAction.h">
+      <Filter>Action Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="CTriangle.h">
+      <Filter>Figures Classes</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
