@@ -35,6 +35,14 @@ void AddRectAction::ReadActionParameters()
 
 }
 
+//Read Parameters Impilicitly 
+void AddRectAction::ReadImpilictParameters(Point P1o, Point P2o, Point P3o, GfxInfo Gfx)
+{
+	P1 = P1o;
+	P2 = P2o;
+	RectGfxInfo = Gfx;
+}
+
 //Execute the action
 void AddRectAction::Execute() 
 {

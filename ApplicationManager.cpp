@@ -1,5 +1,6 @@
 #include "ApplicationManager.h"
 #include "Actions\AddRectAction.h"
+<<<<<<< HEAD
 #include "AddTrianAction.h"
 #include "AddCircleAction.h"
 
@@ -7,6 +8,9 @@
 
 
 
+=======
+#include "Actions\Copy.h"
+>>>>>>> 698f8cfa1eca3d2d0cc4a2833710757071ff2a6b
 
 
 //Constructor
@@ -40,10 +44,50 @@ void ApplicationManager::ExecuteAction(ActionType ActType)
 	//According to Action Type, create the corresponding action object
 	switch (ActType)
 	{
-		case DRAW_RECT:
-			pAct = new AddRectAction(this);
-			break;
+			case DRAW_LINE:
+				pAct = new AddRectAction(this);
+				break;
+			case DRAW_RECT:
+				break;
+			case DRAW_TRI:
+				break;
+			case DRAW_CIRC:
+				break;
+			case CHNG_DRAW_CLR:
+				break;
+			case CHNG_FILL_CLR:
+				break;
+			case CHNG_BK_CLR:
+				break;
+			case ZOOM_IN:
+				break;
+			case ZOOM_OUT:
+				break;
+			case SAVE:
+				break;
+			case LOAD:
+				break;
+			case DEL:
+				break;
+			case MOVE:
+				break;
+			case RESIZE:
+				break;
+			case ROTATE:
+				break;
+			case SEND_BACK:
+				break;
+			case BRNG_FRNT:
+				break;
+			case COPY:
+				pAct = new Copy(this);
+				break;
+			case CUT:
+				break;
+			case PASTE:
+				break;
 
+<<<<<<< HEAD
 		case DRAW_TRI:
 			pAct=new AddTrianAction(this);
 			break;
@@ -54,9 +98,34 @@ void ApplicationManager::ExecuteAction(ActionType ActType)
 
 		case DRAW_LINE:
 			///create AddLineAction here
+=======
+>>>>>>> 698f8cfa1eca3d2d0cc4a2833710757071ff2a6b
 
-			break;
+				//////////////////////////////////////////////////////////////////////////////////
 
+
+			case DRAWING_AREA:
+				break;
+			case STATUS:
+				break;
+			case EMPTY:
+				break;
+
+
+				/*PLAY MODE*/
+
+			case PICK_HIDE_MODE:
+				break;
+			case SCRAMBLE_FIND_MODE:
+				break;
+			case TO_DRAW:
+				break;
+			case BACK:
+				break;
+			case EXIT:
+				break;
+
+<<<<<<< HEAD
 		case EXIT:
 			///create ExitAction here
 			
@@ -65,6 +134,8 @@ void ApplicationManager::ExecuteAction(ActionType ActType)
 		  
 		case STATUS:	//a click on the status bar ==> no action
 			return;
+=======
+>>>>>>> 698f8cfa1eca3d2d0cc4a2833710757071ff2a6b
 	}
 	
 	//Execute the created action
@@ -103,10 +174,6 @@ void ApplicationManager::GetFigCount(int&size)
 	size = FigCount;
 }
 
-CFigure**ApplicationManager::GetFigList()
-{
-	return FigList;
-}
 
 //==================================================================================//
 //							Interface Management Functions							//
