@@ -1,7 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\Actions",
+    "\\Figures"
   ],
-  "SelectedNode": "\\main.cpp",
+  "SelectedNode": "\\Actions\\Cut.h",
   "PreviewInSolutionExplorer": false
 }

@@ -231,6 +231,7 @@
     <ClInclude Include="DEFS.h" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="..\..\CMP103-Project-S2017 - std\Project-Requirements-S2017.pdf" />
     <None Include="ClassDiagram.cd" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

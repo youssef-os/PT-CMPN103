@@ -2,8 +2,8 @@
 
 
 
-Delete::Delete() :
-	Action()
+Delete::Delete(ApplicationManager*App):Action(App)
+
 {
 }
 

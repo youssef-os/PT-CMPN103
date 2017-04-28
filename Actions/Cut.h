@@ -17,7 +17,6 @@ class Cut :
 	CFigure**SelFigList;
 public:
 	Cut(ApplicationManager *pApp);
-	void FindSelectedFig();
 	virtual void ReadActionParameters();
 	virtual void Execute();
 	~Cut();
