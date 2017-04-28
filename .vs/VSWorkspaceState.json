@@ -1,9 +1,7 @@
 {
   "ExpandedNodes": [
-    "",
-    "\\Actions",
-    "\\Figures"
+    ""
   ],
-  "SelectedNode": "\\Actions\\Select.cpp",
+  "SelectedNode": "\\main.cpp",
   "PreviewInSolutionExplorer": false
 }

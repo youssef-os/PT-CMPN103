@@ -1,7 +1,9 @@
 #pragma once
 #include "Action.h"
-#include "../Figures\CFigure.h"
-#include "../Figures\CRectangle.h"
+#include "../Figures/CFigure.h"
+#include "../Figures/CRectangle.h"
+#include "../Figures/CCircle.h"
+#include "../Figures/CTriangle.h"
 #include "../ApplicationManager.h"
 
 class Select :
@@ -10,6 +12,6 @@ class Select :
 public:
 	Select(ApplicationManager*);
 	bool isSelected(CFigure*,Point);
-	float getCircleArea(CFigure*);
+	float getCircleArea(float);
 	~Select();
 };

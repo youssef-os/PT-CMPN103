@@ -17,11 +17,16 @@ bool Select::isSelected(CFigure* fig,Point p){
 			}
 		}
 		return false;
-	}//else if(dynamic_cast<CCircle*>(fig)){
-	//}
+	}else if(dynamic_cast<CCircle*>(fig)){
+		return getCircleArea(fig->r)                                ;
+	}
 	
 }
 
-//float Select::getCircleArea(CFigure* circ){
-//	return 4*atan(1)*pow(((CCircle*)circ -> r),2);
-//}
+float Select::getCircleArea(float r){
+	return 4*atan(1)*pow(r,2);
+}
+
+Select::~Select() {
+	
+}

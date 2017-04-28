@@ -2,7 +2,8 @@
 
 
 
-Delete::Delete()
+Delete::Delete() :
+	Action()
 {
 }
 
