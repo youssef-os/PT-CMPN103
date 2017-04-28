@@ -1,5 +1,12 @@
 #include "ApplicationManager.h"
 #include "Actions\AddRectAction.h"
+#include "AddTrianAction.h"
+#include "AddCircleAction.h"
+
+
+
+
+
 
 
 //Constructor
@@ -37,6 +44,14 @@ void ApplicationManager::ExecuteAction(ActionType ActType)
 			pAct = new AddRectAction(this);
 			break;
 
+		case DRAW_TRI:
+			pAct=new AddTrianAction(this);
+			break;
+		case DRAW_CIRC:
+			pAct=new AddCircleAction(this);
+
+
+
 		case DRAW_LINE:
 			///create AddLineAction here
 
@@ -47,6 +62,7 @@ void ApplicationManager::ExecuteAction(ActionType ActType)
 			
 			break;
 		
+		  
 		case STATUS:	//a click on the status bar ==> no action
 			return;
 	}
@@ -68,6 +84,7 @@ void ApplicationManager::AddFigure(CFigure* pFig)
 {
 	if(FigCount < MaxFigCount )
 		FigList[FigCount++] = pFig;	
+	   // pFig->setID(FigCount);
 }
 ////////////////////////////////////////////////////////////////////////////////////
 CFigure *ApplicationManager::GetFigure(int x, int y) const
