@@ -253,5 +253,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="ClassDiagram.cd" />
+    <None Include="..\..\CMP103-Project-S2017 - std\Project-Requirements-S2017.pdf" />
   </ItemGroup>
 </Project>

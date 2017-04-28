@@ -119,7 +119,7 @@ void Output::CreateEditToolBar() const
 void Output::CreateMainToolBar() const
 {
 	UI.InterfaceMode = MODE_DRAW_MAIN;
-	string MenuItemImages[MAIN_ITM_COUNT];
+	string MenuItemImages[MAIN_ITM_COUNT+6];
 	this->ClearToolBar();
 	MenuItemImages[ITM_ADD] = "images/MainMenuItems/add.jpg";
 	MenuItemImages[ITM_EDIT] = "images\\MainMenuItems\\edit.jpg";
@@ -132,8 +132,15 @@ void Output::CreateMainToolBar() const
 	MenuItemImages[ITM_LOAD] = "images\\MainMenuItems\\load.jpg";
 	MenuItemImages[ITM_EXIT] = "images\\MainMenuItems\\exit.jpg";
 	MenuItemImages[ITM_TO_PLAY] = "images\\MainMenuItems\\ToPlay.jpg";
+	//Xyntechs 3:40PM 4/28/2017
+	MenuItemImages[ITM_TO_PLAY+1] = "images\\MainMenuItems\\logo1.jpg";
+	MenuItemImages[ITM_TO_PLAY+2] = "images\\MainMenuItems\\logo1.jpg";
+	MenuItemImages[ITM_TO_PLAY+3] = "images\\MainMenuItems\\logo2.jpg";
+	MenuItemImages[ITM_TO_PLAY+4] = "images\\MainMenuItems\\logo3.jpg";
+	MenuItemImages[ITM_TO_PLAY+5] = "images\\MainMenuItems\\logo4.jpg";
+	MenuItemImages[ITM_TO_PLAY+6] = "images\\MainMenuItems\\logo5.jpg";
 	//Draw menu item one image at a time
-	for (int i = 0; i < MAIN_ITM_COUNT; i++)
+	for (int i = 0; i < MAIN_ITM_COUNT+6; i++)
 	{
 		pWind->DrawImage(MenuItemImages[i], i*UI.MenuItemWidth, 0, UI.MenuItemWidth, UI.ToolBarHeight);
 	}

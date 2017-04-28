@@ -2,7 +2,7 @@
 
 
 
-Delete::Delete()
+Delete::Delete(ApplicationManager*App):Action(App)
 {
 }
 

@@ -10,16 +10,6 @@ Cut::Cut(ApplicationManager *pApp) : Action(pApp)
 	SelFigCount = 0;
 }
 
-void Cut::FindSelectedFig()
-{
-	CFigure**List;
-	List = pManager->GetFigList();
-	for (int i = 0; i < MaxSelSize; i++)
-	{
-		if (List[i]->IsSelected())
-			SelFigList[SelFigCount++] = List[i];
-	}
-}
 
 void Cut::ReadActionParameters()
 {
@@ -38,7 +28,6 @@ void Cut::ReadActionParameters()
 
 void Cut::Execute()
 {
-	FindSelectedFig();
 	Point P1o, P2o, P3o;
 
 	for (int i = 0; i < SelFigCount; i++)

@@ -4,7 +4,7 @@ class Delete :
 	public Action
 {
 public:
-	Delete();
+	Delete(ApplicationManager*App);
 	~Delete();
 };
 
